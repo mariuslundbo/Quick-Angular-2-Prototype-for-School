@@ -33,13 +33,15 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="let item ">
-                    <td>title</td>
-                    <td>state</td>
-                    <td>x kr</td>
-                    <td><span class="glyphicon glyphicon-user"></span>  user</td>
-                    <td>user rating</td>
-                    <td>added</td>
+                <tr *ngFor="let item of items">
+                    <td>{{item.title}}</td>
+
+                    <!-- perhaps cleaner to have its own method inside its component, but this is for illustrating the use of ngClass -->
+                    <td><span  [ngClass]="{'label': true, 'label-success': item.state === 'New', 'label-default': item.state === 'Normal use', 'label-info': item.state === 'As new', 'label-danger': item.state === 'Readable'}">{{item.state}}</span></td>
+                    <td>{{item.price}} kr</td>
+                    <td><span class="glyphicon glyphicon-user"></span>  {{item.user}}</td>
+                    <td>{{item.userRating}}</td>
+                    <td>{{item.added}}</td>
                 </tr>
                 </tbody>
             </table>

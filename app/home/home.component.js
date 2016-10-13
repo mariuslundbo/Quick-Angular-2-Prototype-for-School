@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var HomeComponent = (function () {
     function HomeComponent() {
-        this.books = [
+        this.items = [
             { "title": "Det tenkende mennesket", "state": "New", "price": 150, "user": "John 1", "userRating": 3, "added": "15 Sep, 5:56 AM" },
             { "title": "Kommunikasjon i relasjoner", "state": "New", "price": 180, "user": "John 2", "userRating": 5, "added": "15 Sep, 5:56 AM" },
             { "title": "Menneskekroppen", "state": "Normal use", "price": 350, "user": "John 3", "userRating": 0, "added": "15 Sep, 5:56 AM" },

@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-
     items: any = [
         {"title":"Det tenkende mennesket", "state":"New","price":150,"user":"John 1","userRating":3,"added":"15 Sep, 5:56 AM"},
         {"title":"Kommunikasjon i relasjoner", "state":"New","price":180,"user":"John 2","userRating":5,"added":"15 Sep, 5:56 AM"},
